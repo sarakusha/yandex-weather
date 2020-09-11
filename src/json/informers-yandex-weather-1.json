@@ -1,0 +1,76 @@
+{
+  "now": 1599750383,
+  "now_dt": "2020-09-10T15:06:23.785Z",
+  "info": {
+    "lat": 55.75396,
+    "lon": 37.620393,
+    "url": "https://yandex.ru/pogoda/?lat=55.75396&lon=37.620393"
+  },
+  "fact": {
+    "temp": 16,
+    "feels_like": 14,
+    "icon": "ovc",
+    "condition": "overcast",
+    "wind_speed": 4.9,
+    "wind_gust": 12.5,
+    "wind_dir": "sw",
+    "pressure_mm": 738,
+    "pressure_pa": 984,
+    "humidity": 86,
+    "daytime": "d",
+    "polar": false,
+    "season": "autumn",
+    "obs_time": 1599749485
+  },
+  "forecast": {
+    "date": "2020-09-11",
+    "date_ts": 1599771600,
+    "week": 37,
+    "sunrise": "05:54",
+    "sunset": "18:56",
+    "moon_code": 4,
+    "moon_text": "moon-code-4",
+    "parts": [
+      {
+        "part_name": "night",
+        "temp_min": 11,
+        "temp_max": 13,
+        "temp_avg": 12,
+        "feels_like": 8,
+        "icon": "bkn_n",
+        "condition": "cloudy",
+        "daytime": "n",
+        "polar": false,
+        "wind_speed": 5.1,
+        "wind_gust": 11.5,
+        "wind_dir": "w",
+        "pressure_mm": 740,
+        "pressure_pa": 987,
+        "humidity": 82,
+        "prec_mm": 0,
+        "prec_period": 360,
+        "prec_prob": 0
+      },
+      {
+        "part_name": "morning",
+        "temp_min": 10,
+        "temp_max": 14,
+        "temp_avg": 12,
+        "feels_like": 6,
+        "icon": "bkn_d",
+        "condition": "cloudy",
+        "daytime": "d",
+        "polar": false,
+        "wind_speed": 7.9,
+        "wind_gust": 16,
+        "wind_dir": "w",
+        "pressure_mm": 743,
+        "pressure_pa": 991,
+        "humidity": 72,
+        "prec_mm": 0,
+        "prec_period": 360,
+        "prec_prob": 0
+      }
+    ]
+  }
+}

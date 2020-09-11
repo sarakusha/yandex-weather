@@ -1,0 +1,178 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /*margin-bottom: 1rem;*/
+}
+
+.temperature {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.cond {
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
+}
+
+.cond_proc {
+  width: 3em;
+  height: 3em;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  font-weight: 300;
+  min-width: 12em;
+}
+
+.icon_weather {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 0.1em;
+  opacity: 0.5;
+}
+
+.icon_small {
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.1em;
+  opacity: 0.5;
+}
+
+.icon_wind_airflow_white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22%3E %3Cg fill=%22%23FFF%22 fill-rule=%22nonzero%22%3E %3Cpath d=%22M6 11.5h5.688a3.75 3.75 0 1 0-1.95-6.954.75.75 0 0 0 .781 1.28A2.25 2.25 0 1 1 11.688 10L6 10.001a.75.75 0 1 0 0 1.5zM2 15h9.966a1.5 1.5 0 1 1-.779 2.782.75.75 0 0 0-.78 1.281 3 3 0 1 0 1.56-5.563H1.999A.75.75 0 1 0 2 15zM16.667 13h2.251a3 3 0 1 0-1.56-5.563.75.75 0 0 0 .781 1.28 1.5 1.5 0 1 1 .779 2.782l-2.251.001a.75.75 0 1 0 0 1.5z%22/%3E %3C/g%3E %3C/svg%3E");
+}
+
+.icon_humidity_white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cg%3E %3Cpath fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M17.5487 8.0001C16.7829 6.74175 15.1271 4.67011 12.5637 1.75476C12.2645 1.41448 11.7342 1.41518 11.4359 1.75625C8.88065 4.67783 7.22597 6.74805 6.45489 7.99571C3.91532 12.1049 3.72409 15.9389 6.56528 18.751C9.63862 21.793 14.3621 21.792 17.4355 18.7512C20.2743 15.9425 20.0858 12.169 17.5487 8.0001ZM7.73087 8.78429C8.39019 7.71747 9.8183 5.91206 12.0019 3.39071C14.1889 5.90415 15.6153 7.70851 16.2673 8.77991C18.4829 12.4205 18.6344 15.4548 16.3805 17.6849C13.8915 20.1475 10.1092 20.1483 7.62047 17.685C5.36463 15.4522 5.51867 12.3638 7.73087 8.78429Z%22 fill=%22white%22/%3E %3Cpath d=%22M12.7366 17.2967C14.3588 16.7579 15.4749 15.2362 15.4749 13.5C15.4749 13.0858 15.1391 12.75 14.7249 12.75C14.3107 12.75 13.9749 13.0858 13.9749 13.5C13.9749 14.5852 13.277 15.5366 12.2638 15.8732C11.8707 16.0038 11.6579 16.4283 11.7884 16.8214C11.919 17.2145 12.3436 17.4273 12.7366 17.2967Z%22 fill=%22white%22/%3E %3C/g%3E %3C/svg%3E")
+}
+
+.icon_pressure_white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cg%3E %3Cpath d=%22M14.1314 2.22778C14.5361 2.31569 14.793 2.71509 14.7051 3.11986C14.6172 3.52464 14.2178 3.78152 13.813 3.69362C13.2222 3.56532 12.6156 3.5 12 3.5C7.30558 3.5 3.5 7.30558 3.5 12C3.5 16.6944 7.30558 20.5 12 20.5C16.6944 20.5 20.5 16.6944 20.5 12C20.5 11.4103 20.4401 10.8289 20.3222 10.2616C20.238 9.85608 20.4985 9.45902 20.904 9.37478C21.3096 9.29054 21.7067 9.55101 21.7909 9.95657C21.9295 10.624 22 11.3077 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C12.7228 2 13.4361 2.07681 14.1314 2.22778Z%22 fill=%22white%22/%3E %3Cpath fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M13.348 10.6533C13.6409 10.9461 14.1158 10.946 14.4086 10.6531L18.0304 7.03025C18.3233 6.73732 18.3232 6.26244 18.0303 5.96959C17.7373 5.67674 17.2624 5.67681 16.9696 5.96975L13.3478 9.59259C13.055 9.88553 13.055 10.3604 13.348 10.6533ZM8.21961 15.7803C8.51248 16.0732 8.98735 16.0732 9.28028 15.7804L10.5308 14.5301C10.8237 14.2373 10.8238 13.7624 10.5309 13.4695C10.238 13.1766 9.76315 13.1765 9.47023 13.4694L8.21972 14.7196C7.9268 15.0125 7.92675 15.4874 8.21961 15.7803Z%22 fill=%22white%22/%3E %3Cpath fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M14.75 5.75C14.75 5.33579 15.0858 5 15.5 5H18.25C18.6642 5 19 5.33579 19 5.75C19 6.16421 18.6642 6.5 18.25 6.5H15.5C15.0858 6.5 14.75 6.16421 14.75 5.75Z%22 fill=%22white%22/%3E %3Cpath fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M17.5 5.75C17.5 5.33579 17.8358 5 18.25 5C18.6642 5 19 5.33579 19 5.75V8.5C19 8.91421 18.6642 9.25 18.25 9.25C17.8358 9.25 17.5 8.91421 17.5 8.5V5.75Z%22 fill=%22white%22/%3E %3Cpath fill-rule=%22evenodd%22 clip-rule=%22evenodd%22 d=%22M9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12ZM13.5 12C13.5 12.8284 12.8284 13.5 12 13.5C11.1716 13.5 10.5 12.8284 10.5 12C10.5 11.1716 11.1716 10.5 12 10.5C12.8284 10.5 13.5 11.1716 13.5 12Z%22 fill=%22white%22/%3E %3C/g%3E %3C/svg%3E");
+}
+
+.icon_wind {
+  /*margin-top: 13px;*/
+  /*margin-left: 1px;*/
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5pY193aW5kX2RpcmVjdGlvbl93aGl0ZTwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZGVmcz48L2RlZnM+ICAgIDxnIGlkPSJTeW1ib2xzIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJpY193aW5kX2RpcmVjdGlvbl93aGl0ZSIgZmlsbD0iI0ZGRkZGRiI+ICAgICAgICAgICAgPHBvbHlnb24gaWQ9IlBhdGgtMiIgcG9pbnRzPSIxMiA1LjI1IDYuMDA2NDA4NjkgMjAuMjUgMTIgMTUuNzUgMTggMjAuMjUiPjwvcG9seWdvbj4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==);
+  -webkit-background-size: cover;
+  background-size: cover;
+  opacity: .5
+}
+
+/*.icon_wind {*/
+/*  vertical-align: top;*/
+/*  background-image: url(//yandex-pogoda.naydex.net/a1Ki61548/8c3f2drB/CiM8qtHcT83Tj9yiHlHyU3XgYoox9oZaZSjXl2_EXLU0hkqm2gJe0xdeGfldDpLzvW_nBsIQ5-mYo1sgwdyOpenhrbnxn5wvBe1PsQny86IHg7A5BFcB64SKJYFuRa0HZaObVVpQ3fAFbKtpHS1Dom3u11ZRQmaOSzB587f9P6fbg3zZo15_bSV_ztE68JKgRnKx2FQEUtt22yUBz0RclbbC6SQaAYxj5C9paS5cEkI9TOUGkOJWXyrAOpMUflwW2wN_aWDuf32nzJ6wSyLAU4ZgcMuFRUPrxqqnw92V3qe1c8s3-2DPQTWeWai-XxJDPM1nhjMiZrwrU5pxF37NdMnR7csjLb-sdB2ssFhSwKOEIXNZlecwyVTrVyIddf4VBcC7Z_kh71BX7GpZzw1gYR6eRdRAoKasSKJ7wiUeHXT5wl9Jsb-OD9VND3P5gEAgdlBiqwYHQPqVyKeBLobvFQWR2UWaEu8DpQ25ex9OcqAM7XRXgMG077jyWgHnTozVi9Ku6bKNPb-nPZ1jidDQM0YgYPvlFqGIJxrVU67lP7VmsomGOLHOAKQ-G0s8X4ABzKxlpLChtx_5wklQpEyNRGqwXykA3b3-pi0OEAgQMnM10jOrtbcCeFaqxOP_Fl63RrCb9ehg3RJETsjqv7whIK4cNAeisPZeCRFLQQaenHXJ0o1L4_-fPJUvTWMIUNGBhgBRW_SGQSlEmhTR3bUfhVdSOtao4fwwZZwbGv780qGdnSaXsvA3TDkg-qAkn2-naiHc2_Pvz883PW1R6OBTEUeScuiFZVBLhConEg53TLdmkMo2KqLOUYf8iCtdfRAxvP02VzHSJBxpwiqwJsxPdbrxzcujfY8O5C39g3khgWPF0_N6dAeB2EU5pSL9JW_k9JCJVSqxTUI13Rpr3B7D8W6tBeZz0KVuaBFLwKa_nNco0d67Ad0czdUevLO6AtExN-CR--ZHITpVmhZzzFT9BLSzOqXJcV5DVg9Ki_-PgOHNf0VmUcLnP4lSusN2j072-KGNKVF-j-81vS5RSmMSQFYgEdm2VCOaZNgnYO903NZVE4q2GMDMUye-KCv9DqJBjJ_V5NAwdF0Z0thiBly-5zkxn6nRPx_uhRxuc-hS4yEmAoF7tYcyGGcLt1P8RhylhmPoFJiTDDA07mop3X1g8UwO1AZgksYNyzOJcZSuX1So4r3LAk1v_vdcLpErsDFhdCOhuQf0UAp1mXSR3XXeF5TCKRbZYg3SlZ-pSp5tkiJ9fRdVUTD27GuQqsEn_K0l6jJ_6BM_bN1V7D2gKfPDciUD8vhmFtIr9qpHAV2H3MaloHq3iULtckYuGmvffKHR7R7FxmHBxuz5AqiT5M6PVatALjkRHl1_tG69sUgDwjGmMPHrtjUxKab4hXG_Vg-HZlIYlNrhXXGFbol7Pu9D0V_MZlRxIGaPm3I7QfVfLEXqkc1KAv5vDvfP3GPr47FBhNBwSwWnkmq2uzfBXTTc1YUAO-Y7YV4xVu0bOy8cU8KPLDV1oCOEzToRiLEETH2lmeGM-yGPj93XH5yAWuHAwQfRkknn5VAbxcslIJxW_AWnYvlnakCuo6WNm4tvrjEj7Q72RACxJv7aIWmjRy2cBOqiT4iy3q79BZwcMwpAUzAGEND59DTAKJbrZ8NNBS9mZcMLByiBjlAFPTrJXo6ycX1-1nVBIHQdOyEqoaUuX1ba858rAJ0u_ZVP3KJ6gSLC5rOzWGVGM9mVOCaBvwYuF0dAefWZUN5zRcypqW4-k7P_POeHYAAWvGlzWdPHXpx1WSGvK6GMPh6HDrxRGrBxIGfgQHs1dmILZtgWwU2mHQWG8FnkGpO-AAU_KqqvfCLhPJ5FJvAChj-4AhjCVR1OVooSDQjiXk7-dz8MAHoSATGnwJKJ9jew20XJl_A85l7F18EptctDP6B330ppDzwj4f9e9gTDU7YvupJ6YDWunXT7gZwbsMwv7WZNn3D6wkIhdMBQG-QVEOmXekTRfce893bSmXfaQVwCVG566c6c0lM-DeVUoqD2fjuQyFOkzt-2W0PemhDfr-30TJyh2fOw0EUyoqvXpiELRDk3ks8WbTSUUGlX6DEsAFf_CRiezJDhzw70Z7PBt-1LM0rglFx8VaoTbXjhHB3s1A1_0PuzwKDmkYAZx5ZSO5V4x6M_xHzVBWPJ1cpSnwFHPxhorJ8wMk_cthZy08Y8-pBKQqSOH6boMn_6gR_9Hcf-DOOIYgBhViFjeTY0w5lGiXcizsZvBmaCmjSZM8xj980ZGA8-oZGfXQZngpIEvPkCqYNnrBwm-BIPqvH-P550XG-jSEEQ4DfBw0onhsG6ZouXYw0V3NcF0hn3CGNt4Hd9usq9PsGwv712NLJBhK4JYruhxw1MJUsRfNoRDh--1B5fYXgCkHAV8_BYVUTieQTIpJG_pnzGh8JZZSqyjKGXfVo5j11BkB7_FfVhIafvWJEo8xavrvVJkFzJoZ-fv_dOL4GIUfCBR5PwqpXVkSqGuAWRjSZ8N6Uj-geawS6B1-6aWwyeYvMMzJeGoWMlDtvyGBHG_F7m2XKO2SKOPb0W_42xG5BC43fhg1tkRAD5p_sEgO6HT3ZWsviVWFCPc-YNSats7IMDfN32VIERxPw64PtxVe79NXvRf3lzbn39te3eMhmSU0OXkbOaV8bBycdKpeGPRZ-lpJGbdxrhzTBUXlkL307g883PZWVS4FUN2wJa4qROjPfpw29qkJ-PLnXPLrBoEvIQxrBRqoXkktsHONXDjtVMpxWyGPX40D9QNT8rS75fcMMOzJQko0A2PCtjKMG1jL1HS0HMOrKsT5-1jeyg-5GCQdaQg9s2B3ILp2tkgv-FzOV3ggqHypIPgeevmove_0MgE)*/
+/*}*/
+
+.icon_wind_s {
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg)
+}
+
+.icon_wind_ssw {
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg)
+}
+
+.icon_wind_sw {
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+
+.icon_wind_wsw {
+  -webkit-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg)
+}
+
+.icon_wind_w {
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+
+.icon_wind_wnw {
+  -webkit-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg)
+}
+
+.icon_wind_nw {
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg)
+}
+
+.icon_wind_nnw {
+  -webkit-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg)
+}
+
+.icon_wind_n {
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg)
+}
+
+.icon_wind_nne {
+  -webkit-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+  transform: rotate(-150deg)
+}
+
+.icon_wind_ne {
+  -webkit-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg)
+}
+
+.icon_wind_ene {
+  -webkit-transform: rotate(-120deg);
+  -o-transform: rotate(-120deg);
+  transform: rotate(-120deg)
+}
+
+.icon_wind_e {
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg)
+}
+
+.icon_wind_ese {
+  -webkit-transform: rotate(-60deg);
+  -o-transform: rotate(-60deg);
+  transform: rotate(-60deg)
+}
+
+.icon_wind_se {
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+.icon_wind_sse {
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg)
+}
