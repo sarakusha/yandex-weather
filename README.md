@@ -1,32 +1,16 @@
-Displaying forecast from Yandex Weather on screens
+##Displaying forecast from Yandex Weather on screens.
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+###Показ погоды на экранах.
 
-## Getting Started
+Параметры запроса:
+* lat - широта
+* lon - долгота
+* api - API-ключ для _Яндекс Погода_
+* forecast - Значения: 0, 1. Показать прогноз. По умолчанию - если высота окна выше 224px, то показать, иначе - нет
+* width - высота окна в пикселях. Если не указано, то на весь экран.
+* height - ширина окна в пикселях. Если не указано, то на весь экран.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+Пример:
+ ```
+https://weather.sarakusha.ru/?lat=55.714549&lon=37.551742&width=360&height=160&key=9aee02da-1828-4c8c-8f66-ffffffffffff
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
