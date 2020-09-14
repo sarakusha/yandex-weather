@@ -17,7 +17,7 @@ const validQueries = ['lat', 'lon', 'key', 'lang'];
 
 console.log('create new cache');
 const cache = new NodeCache({
-  stdTTL: 30 * 60,
+  stdTTL: 30 * 60, // 30 мин
   // deleteOnExpire: false,
   // useClones: false,
 });
@@ -29,11 +29,11 @@ if (!isProdMode) {
   cache.set<YandexWeatherV2>('TEST', testData1 as any, 0);
 }
 
-cache.on('expired', (key: string, _value: YandexWeatherV2) => {
-  // eslint-disable-next-line no-param-reassign
-  // value.expired = true;
-  console.log(key, 'expired');
-});
+// cache.on('expired', (key: string, _value: YandexWeatherV2) => {
+//   // eslint-disable-next-line no-param-reassign
+//   // value.expired = true;
+//   console.log(key, 'expired');
+// });
 
 const getKey = (searchParams: URLSearchParams): string =>
   isProdMode
@@ -49,9 +49,10 @@ type WeatherData = [weather: YandexWeatherV2, maxAge?: number];
 const getWeather = async (url?: string): Promise<WeatherData> => {
   if (!url) throw createError(400);
   const { searchParams } = new URL(url, YANDEX_WEATHER);
+  const api = searchParams.get('api');
+  if (!api) throw createError(400, 'Yandex API required');
   const key = getKey(searchParams);
   if (!key) {
-    console.log('Empty query');
     throw createError(404, 'Unknown coordinates');
   }
   const item = cache.get<YandexWeatherV2>(key);
@@ -59,15 +60,13 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
     const ttl = cache.getTtl(key);
     const now = Date.now();
     const maxAge = ttl && Math.round((ttl - now) / 1000);
-    console.log('cached', { key, maxAge });
     return [item, maxAge];
   }
   const headers = {
-    'X-Yandex-API-Key': searchParams.get('key') ?? '0534a7f5-39e2-435c-bce6-9830ca819d23',
+    'X-Yandex-API-Key': api,
   };
-  searchParams.delete('key');
+  searchParams.delete('api');
   try {
-    console.log('request...', key);
     const value = await got(YANDEX_WEATHER, {
       searchParams,
       headers,
@@ -76,7 +75,7 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
     return [value, cache.options.stdTTL];
   } catch (err) {
     console.error(
-      'error while get weather',
+      'error while getting a forecast',
       err.response.url,
       err.response.statusCode,
       err.response.body
