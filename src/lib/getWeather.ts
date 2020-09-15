@@ -8,7 +8,7 @@ import { YandexWeatherV2 } from './useWeather';
 
 const YANDEX_WEATHER = 'https://api.weather.yandex.ru/v2/informers';
 
-const validQueries = ['lat', 'lon', 'key', 'lang'];
+const validQueries = ['lat', 'lon', 'api', 'lang'];
 
 // type Item = {
 //   value: YandexWeatherV2;
@@ -50,7 +50,7 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
   if (!url) throw createError(400);
   const { searchParams } = new URL(url, YANDEX_WEATHER);
   const api = searchParams.get('api');
-  if (!api) throw createError(400, 'Yandex API required');
+  if (!api || api.length !== 36) throw createError(400, 'Yandex API required');
   const key = getKey(searchParams);
   if (!key) {
     throw createError(404, 'Unknown coordinates');
