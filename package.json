@@ -1,7 +1,7 @@
 {
   "name": "yandex-weather",
   "author": "Andrei Sarakeev <sarakusha@gmail.com>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

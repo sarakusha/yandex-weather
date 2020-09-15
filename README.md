@@ -1,6 +1,6 @@
-##Displaying forecast from Yandex Weather on screens.
+## Displaying forecast from Yandex Weather on screens.
 
-###Показ погоды на экранах.
+### Показ погоды на экранах.
 
 Параметры запроса:
 * lat - широта
@@ -12,5 +12,5 @@
 
 Пример:
  ```
-https://weather.sarakusha.ru/?lat=55.714549&lon=37.551742&width=360&height=160&key=9aee02da-1828-4c8c-8f66-ffffffffffff
+https://weather.sarakusha.ru/?lat=55.714549&lon=37.551742&width=360&height=160&api=9aee02da-1828-4c8c-8f66-ffffffffffff
 ```
