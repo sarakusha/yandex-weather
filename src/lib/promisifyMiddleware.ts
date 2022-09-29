@@ -17,7 +17,7 @@ interface MiddlewareHandler<T = any> {
 // Helper method to wait for a middleware to execute before continuing
 // And to throw an error when an error happens in a middleware
 export default function promisifyMiddleware<
-  T extends any,
+  T,
   TReq extends IncomingMessage,
   TRes extends ServerResponse
 >(middleware: RequestHandler<TReq, TRes>): MiddlewareHandler<T> {

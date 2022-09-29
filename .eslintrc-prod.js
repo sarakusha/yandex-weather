@@ -103,6 +103,17 @@ module.exports = {
       },
     ],
     'react/prop-types': 'off',
+    'react/require-default-props': 'off',
+    'react/function-component-definition': 'off',
+    'react/no-unknown-property': [
+      2,
+      {
+        'ignore': [
+          'jsx',
+          'global'
+        ],
+      },
+    ],
   },
   overrides: [
     {

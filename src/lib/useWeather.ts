@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import ky from 'ky/umd';
+import ky from 'ky';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
@@ -273,7 +273,7 @@ const useWeather = (initial?: YandexWeatherV2): YandexWeatherV2 | undefined => {
   const { query } = useRouter();
   const searchParams = new URLSearchParams(query as Record<string, string>);
   const { data } = useSWR<YandexWeatherV2>(`${API}?${searchParams}`, fetcher, {
-    initialData: initial,
+    fallbackData: initial,
     refreshWhenHidden: true,
     refreshInterval: MINUTE,
   });

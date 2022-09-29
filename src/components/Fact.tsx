@@ -7,8 +7,13 @@ import Temperature from './Temperature';
 
 type Props = Pick<FactType, 'temp' | 'icon' | 'condition' | 'feels_like'>;
 
-const Fact: FC<Props> = ({ temp, condition, icon, feels_like }) => {
-  return (
+const Fact: FC<Props> = ({
+  temp,
+  condition,
+  icon,
+  feels_like,
+}) =>
+  (
     <div className={clsx(styles.root)}>
       <Temperature className={styles.temperature} temp={temp} />
       <img
@@ -24,6 +29,5 @@ const Fact: FC<Props> = ({ temp, condition, icon, feels_like }) => {
       </div>
     </div>
   );
-};
 
 export default Fact;

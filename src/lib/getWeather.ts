@@ -1,4 +1,5 @@
 import NodeCache from 'node-cache';
+// eslint-disable-next-line import/no-unresolved
 import got from 'got';
 import createError from 'http-errors';
 
@@ -50,7 +51,7 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
   if (!url) throw createError(400);
   const { searchParams } = new URL(url, YANDEX_WEATHER);
   const api = searchParams.get('api');
-  if (!api || api.length !== 36) throw createError(400, 'Yandex API required');
+  if (!api || api.length !== 36) throw createError(400, 'Yandex API-key required');
   const key = getKey(searchParams);
   if (!key) {
     throw createError(404, 'Unknown coordinates');
@@ -73,7 +74,7 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
     }).json<YandexWeatherV2>();
     cache.set<YandexWeatherV2>(key, value);
     return [value, cache.options.stdTTL];
-  } catch (err) {
+  } catch (err: any) {
     console.error(
       'error while getting a forecast',
       err.response.url,

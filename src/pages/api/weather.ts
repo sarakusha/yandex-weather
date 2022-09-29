@@ -1,3 +1,4 @@
+import { HttpError } from 'http-errors';
 import { NextApiHandler } from 'next';
 import getWeather from '../../lib/getWeather';
 
@@ -9,7 +10,8 @@ const weather: NextApiHandler = async (req, res) => {
       maxAge && maxAge > 0 ? `max-age=${Math.min(maxAge, 30 * 60)}, public` : 'no-store'
     );
     return res.json(value);
-  } catch (err) {
+  } catch (e) {
+    const err = e as HttpError;
     return res.status(err.status ?? err.statusCode ?? 500).send(err.message);
   }
 };
