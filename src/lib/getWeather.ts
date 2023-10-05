@@ -23,7 +23,7 @@ const cache = new NodeCache({
   // useClones: false,
 });
 
-const isProdMode = process.env.NODE_ENV === 'production';
+const isProdMode = true; // process.env.NODE_ENV === 'production';
 
 if (!isProdMode) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -39,10 +39,10 @@ if (!isProdMode) {
 const getKey = (searchParams: URLSearchParams): string =>
   isProdMode
     ? Array.from(searchParams.entries())
-        .filter(([key]) => validQueries.includes(key))
-        .sort(([a], [b]) => (a < b ? -1 : a === b ? 0 : 1))
-        .map(([name, value]) => `${name}=${value}`)
-        .join('&')
+      .filter(([key]) => validQueries.includes(key))
+      .sort(([a], [b]) => (a < b ? -1 : a === b ? 0 : 1))
+      .map(([name, value]) => `${name}=${value}`)
+      .join('&')
     : 'TEST';
 
 type WeatherData = [weather: YandexWeatherV2, maxAge?: number];
@@ -72,6 +72,7 @@ const getWeather = async (url?: string): Promise<WeatherData> => {
       searchParams,
       headers,
     }).json<YandexWeatherV2>();
+    console.log(value);
     cache.set<YandexWeatherV2>(key, value);
     return [value, cache.options.stdTTL];
   } catch (err: any) {
