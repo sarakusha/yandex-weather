@@ -41,7 +41,9 @@ const Header: FC = () => {
           {day}, {now.getDate()} {MONTHS[now.getMonth() - 1]},&nbsp; <Clock />
         </div>
       </div>
-      <img src="/ya-weather-white.svg" alt="Яндекс Погода" className={styles.logo} />
+      {!query.noban && (
+        <img src="/ya-weather-white.svg" alt="Яндекс Погода" className={styles.logo} />
+      )}
     </div>
   );
 };
