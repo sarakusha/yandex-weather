@@ -17,7 +17,7 @@ const Fact: FC<Props> = ({ temp, condition, icon, feels_like }) => (
     />
     <div className={styles.description}>
       <div>{conditions[condition]}</div>
-      <div className="secondary">
+      <div /* className="secondary" */>
         Ощущается как <Temperature temp={feels_like} />
       </div>
     </div>

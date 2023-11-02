@@ -1,4 +1,5 @@
-.fact__theme,.fact__theme:before {
+.fact__theme,
+.fact__theme:before {
   position: absolute;
   content: '';
   left: 0;
@@ -12,395 +13,467 @@
 }
 
 .fact__theme_day_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4c90f4),to(#3e9eee));
-  background-image: -webkit-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: -o-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: linear-gradient(to bottom,#4c90f4,#3e9eee)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c90f4), to(#3e9eee));
+  background-image: -webkit-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: -o-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: linear-gradient(to bottom, #4c90f4, #3e9eee);
 }
 
 .fact__theme_day_clear:before {
-  background-image: url(/day-clear.jpg)
+  background-image: url(/day-clear.jpg);
 }
 
 .fact__theme_day_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4c90f4),to(#3e9eee));
-  background-image: -webkit-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: -o-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: linear-gradient(to bottom,#4c90f4,#3e9eee)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c90f4), to(#3e9eee));
+  background-image: -webkit-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: -o-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: linear-gradient(to bottom, #4c90f4, #3e9eee);
 }
 
 .fact__theme_day_partly:before {
-  background-image: url(/day-partly.jpg)
+  background-image: url(/day-partly.jpg);
 }
 
-.fact__theme_day_cloudy,.fact__theme_day_rain,.fact__theme_day_sleet,.fact__theme_day_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4a72ac),to(#438dcb));
-  background-image: -webkit-linear-gradient(top,#4a72ac,#438dcb);
-  background-image: -o-linear-gradient(top,#4a72ac,#438dcb);
-  background-image: linear-gradient(to bottom,#4a72ac,#438dcb);
+.fact__theme_day_cloudy,
+.fact__theme_day_rain,
+.fact__theme_day_sleet,
+.fact__theme_day_snow {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4a72ac), to(#438dcb));
+  background-image: -webkit-linear-gradient(top, #4a72ac, #438dcb);
+  background-image: -o-linear-gradient(top, #4a72ac, #438dcb);
+  background-image: linear-gradient(to bottom, #4a72ac, #438dcb);
 }
 
-.fact__theme_day_cloudy:before,.fact__theme_day_rain:before,.fact__theme_day_sleet:before,.fact__theme_day_snow:before {
-  background-image: url(/day-cloudy.jpg)
+.fact__theme_day_cloudy:before,
+.fact__theme_day_rain:before,
+.fact__theme_day_sleet:before,
+.fact__theme_day_snow:before {
+  background-image: url(/day-cloudy.jpg);
 }
 
 .fact__theme_dawn_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#445d81),color-stop(58%,#856c67),color-stop(58%,#dd9149));
-  background-image: -webkit-linear-gradient(top,#445d81,#856c67 58%,#dd9149);
-  background-image: -o-linear-gradient(top,#445d81,#856c67 58%,#dd9149);
-  background-image: linear-gradient(to bottom,#445d81,#856c67 58%,#dd9149)
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#445d81),
+    color-stop(58%, #856c67),
+    color-stop(58%, #dd9149)
+  );
+  background-image: -webkit-linear-gradient(top, #445d81, #856c67 58%, #dd9149);
+  background-image: -o-linear-gradient(top, #445d81, #856c67 58%, #dd9149);
+  background-image: linear-gradient(to bottom, #445d81, #856c67 58%, #dd9149);
 }
 
 .fact__theme_dawn_clear:before {
-  background-image: url(/dawn-clear.jpg)
+  background-image: url(/dawn-clear.jpg);
 }
 
 .fact__theme_dawn_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#433849),color-stop(50%,#806c75),color-stop(50%,#f69f55));
-  background-image: -webkit-linear-gradient(top,#433849,#806c75 50%,#f69f55);
-  background-image: -o-linear-gradient(top,#433849,#806c75 50%,#f69f55);
-  background-image: linear-gradient(to bottom,#433849,#806c75 50%,#f69f55)
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#433849),
+    color-stop(50%, #806c75),
+    color-stop(50%, #f69f55)
+  );
+  background-image: -webkit-linear-gradient(top, #433849, #806c75 50%, #f69f55);
+  background-image: -o-linear-gradient(top, #433849, #806c75 50%, #f69f55);
+  background-image: linear-gradient(to bottom, #433849, #806c75 50%, #f69f55);
 }
 
 .fact__theme_dawn_partly:before {
-  background-image: url(/dawn-partly.jpg)
+  background-image: url(/dawn-partly.jpg);
 }
 
-.fact__theme_dawn_cloudy,.fact__theme_dawn_rain,.fact__theme_dawn_sleet,.fact__theme_dawn_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#2c3a42),to(#4e415d));
-  background-image: -webkit-linear-gradient(top,#2c3a42,#4e415d);
-  background-image: -o-linear-gradient(top,#2c3a42,#4e415d);
-  background-image: linear-gradient(to bottom,#2c3a42,#4e415d)
+.fact__theme_dawn_cloudy,
+.fact__theme_dawn_rain,
+.fact__theme_dawn_sleet,
+.fact__theme_dawn_snow {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2c3a42), to(#4e415d));
+  background-image: -webkit-linear-gradient(top, #2c3a42, #4e415d);
+  background-image: -o-linear-gradient(top, #2c3a42, #4e415d);
+  background-image: linear-gradient(to bottom, #2c3a42, #4e415d);
 }
 
-.fact__theme_dawn_cloudy:before,.fact__theme_dawn_rain:before,.fact__theme_dawn_sleet:before,.fact__theme_dawn_snow:before {
-  background-image: url(/dawn-cloudy.jpg)
+.fact__theme_dawn_cloudy:before,
+.fact__theme_dawn_rain:before,
+.fact__theme_dawn_sleet:before,
+.fact__theme_dawn_snow:before {
+  background-image: url(/dawn-cloudy.jpg);
 }
 
 .fact__theme_night_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#2e4686),to(#375382));
-  background-image: -webkit-linear-gradient(top,#2e4686,#375382);
-  background-image: -o-linear-gradient(top,#2e4686,#375382);
-  background-image: linear-gradient(to bottom,#2e4686,#375382)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e4686), to(#375382));
+  background-image: -webkit-linear-gradient(top, #2e4686, #375382);
+  background-image: -o-linear-gradient(top, #2e4686, #375382);
+  background-image: linear-gradient(to bottom, #2e4686, #375382);
 }
 
 .fact__theme_night_clear:before {
-  background-image: url(/night-clear.jpg)
+  background-image: url(/night-clear.jpg);
 }
 
 .fact__theme_night_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#213468),to(#1d3662));
-  background-image: -webkit-linear-gradient(top,#213468,#1d3662);
-  background-image: -o-linear-gradient(top,#213468,#1d3662);
-  background-image: linear-gradient(to bottom,#213468,#1d3662)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#213468), to(#1d3662));
+  background-image: -webkit-linear-gradient(top, #213468, #1d3662);
+  background-image: -o-linear-gradient(top, #213468, #1d3662);
+  background-image: linear-gradient(to bottom, #213468, #1d3662);
 }
 
 .fact__theme_night_partly:before {
-  background-image: url(/night-partly.jpg)
+  background-image: url(/night-partly.jpg);
 }
 
-.fact__theme_night_cloudy,.fact__theme_night_rain,.fact__theme_night_sleet,.fact__theme_night_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#162a62),to(#16315f));
-  background-image: -webkit-linear-gradient(top,#162a62,#16315f);
-  background-image: -o-linear-gradient(top,#162a62,#16315f);
-  background-image: linear-gradient(to bottom,#162a62,#16315f)
+.fact__theme_night_cloudy,
+.fact__theme_night_rain,
+.fact__theme_night_sleet,
+.fact__theme_night_snow {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#162a62), to(#16315f));
+  background-image: -webkit-linear-gradient(top, #162a62, #16315f);
+  background-image: -o-linear-gradient(top, #162a62, #16315f);
+  background-image: linear-gradient(to bottom, #162a62, #16315f);
 }
 
-.fact__theme_night_cloudy:before,.fact__theme_night_rain:before,.fact__theme_night_sleet:before,.fact__theme_night_snow:before {
-  background-image: url(/night-cloudy.jpg)
+.fact__theme_night_cloudy:before,
+.fact__theme_night_rain:before,
+.fact__theme_night_sleet:before,
+.fact__theme_night_snow:before {
+  background-image: url(/night-cloudy.jpg);
 }
 
 .fact__theme_svg:before {
   -webkit-background-size: auto 100%;
   background-size: auto 100%;
-  background-position: 0 0
+  background-position: 0 0;
 }
 
 .fact__theme_svg.fact__theme_day_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4c90f4),to(#3e9eee));
-  background-image: -webkit-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: -o-linear-gradient(top,#4c90f4,#3e9eee);
-  background-image: linear-gradient(to bottom,#4c90f4,#3e9eee)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c90f4), to(#3e9eee));
+  background-image: -webkit-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: -o-linear-gradient(top, #4c90f4, #3e9eee);
+  background-image: linear-gradient(to bottom, #4c90f4, #3e9eee);
 }
 
 .fact__theme_svg.fact__theme_day_clear:before {
-  background-image: url(/day-clear.svg)
+  background-image: url(/day-clear.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_clear .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_clear .fact__hourly_nav:hover {
-  background: #66b4fc
+.fact_new_fact.fact_svg.fact_theme_day_clear .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_clear .fact__hourly_nav:hover {
+  background: #66b4fc;
 }
 
 .fact__theme_svg.fact__theme_day_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#5bb6f9),to(#287ddf));
-  background-image: -webkit-linear-gradient(top,#5bb6f9,#287ddf);
-  background-image: -o-linear-gradient(top,#5bb6f9,#287ddf);
-  background-image: linear-gradient(to bottom,#5bb6f9,#287ddf)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5bb6f9), to(#287ddf));
+  background-image: -webkit-linear-gradient(top, #5bb6f9, #287ddf);
+  background-image: -o-linear-gradient(top, #5bb6f9, #287ddf);
+  background-image: linear-gradient(to bottom, #5bb6f9, #287ddf);
 }
 
 .fact__theme_svg.fact__theme_day_partly:before {
-  background-image: url(/day-partly-1.svg),url(/day-partly-2.svg),url(/day-partly-3.svg)
+  background-image: url(/day-partly-1.svg), url(/day-partly-2.svg), url(/day-partly-3.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_partly .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_partly .fact__hourly_nav:hover {
-  background: #66b4fc
+.fact_new_fact.fact_svg.fact_theme_day_partly .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_partly .fact__hourly_nav:hover {
+  background: #66b4fc;
 }
 
 .fact__theme_svg.fact__theme_day_cloudy {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#6aa5eb),to(#357be3));
-  background-image: -webkit-linear-gradient(top,#6aa5eb,#357be3);
-  background-image: -o-linear-gradient(top,#6aa5eb,#357be3);
-  background-image: linear-gradient(to bottom,#6aa5eb,#357be3)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6aa5eb), to(#357be3));
+  background-image: -webkit-linear-gradient(top, #6aa5eb, #357be3);
+  background-image: -o-linear-gradient(top, #6aa5eb, #357be3);
+  background-image: linear-gradient(to bottom, #6aa5eb, #357be3);
 }
 
 .fact__theme_svg.fact__theme_day_cloudy:before {
-  background-image: url(/day-cloudy-1.svg),url(/day-cloudy-2.svg),url(/day-cloudy-3.svg)
+  background-image: url(/day-cloudy-1.svg), url(/day-cloudy-2.svg), url(/day-cloudy-3.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_cloudy .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_cloudy .fact__hourly_nav:hover {
-  background: #73abec
+.fact_new_fact.fact_svg.fact_theme_day_cloudy .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_cloudy .fact__hourly_nav:hover {
+  background: #73abec;
 }
 
 .fact__theme_svg.fact__theme_day_rain {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#2d7aee),to(#3f95fb));
-  background-image: -webkit-linear-gradient(top,#2d7aee,#3f95fb);
-  background-image: -o-linear-gradient(top,#2d7aee,#3f95fb);
-  background-image: linear-gradient(to bottom,#2d7aee,#3f95fb)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d7aee), to(#3f95fb));
+  background-image: -webkit-linear-gradient(top, #2d7aee, #3f95fb);
+  background-image: -o-linear-gradient(top, #2d7aee, #3f95fb);
+  background-image: linear-gradient(to bottom, #2d7aee, #3f95fb);
 }
 
 .fact__theme_svg.fact__theme_day_rain:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_rain .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_rain .fact__hourly_nav:hover {
-  background: #64a9fa
+.fact_new_fact.fact_svg.fact_theme_day_rain .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_rain .fact__hourly_nav:hover {
+  background: #64a9fa;
 }
 
 .fact__theme_svg.fact__theme_day_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4478ff),to(#7694ff));
-  background-image: -webkit-linear-gradient(top,#4478ff,#7694ff);
-  background-image: -o-linear-gradient(top,#4478ff,#7694ff);
-  background-image: linear-gradient(to bottom,#4478ff,#7694ff)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4478ff), to(#7694ff));
+  background-image: -webkit-linear-gradient(top, #4478ff, #7694ff);
+  background-image: -o-linear-gradient(top, #4478ff, #7694ff);
+  background-image: linear-gradient(to bottom, #4478ff, #7694ff);
 }
 
 .fact__theme_svg.fact__theme_day_snow:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_snow .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_snow .fact__hourly_nav:hover {
-  background: #87a2ff
+.fact_new_fact.fact_svg.fact_theme_day_snow .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_snow .fact__hourly_nav:hover {
+  background: #87a2ff;
 }
 
 .fact__theme_svg.fact__theme_day_sleet {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#3e7cf5),to(#6e94fe));
-  background-image: -webkit-linear-gradient(top,#3e7cf5,#6e94fe);
-  background-image: -o-linear-gradient(top,#3e7cf5,#6e94fe);
-  background-image: linear-gradient(to bottom,#3e7cf5,#6e94fe)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e7cf5), to(#6e94fe));
+  background-image: -webkit-linear-gradient(top, #3e7cf5, #6e94fe);
+  background-image: -o-linear-gradient(top, #3e7cf5, #6e94fe);
+  background-image: linear-gradient(to bottom, #3e7cf5, #6e94fe);
 }
 
 .fact__theme_svg.fact__theme_day_sleet:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_day_sleet .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_day_sleet .fact__hourly_nav:hover {
-  background: #81a3fe
+.fact_new_fact.fact_svg.fact_theme_day_sleet .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_day_sleet .fact__hourly_nav:hover {
+  background: #81a3fe;
 }
 
 .fact__theme_svg.fact__theme_dawn_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#3574d2),to(#e957c0));
-  background-image: -webkit-linear-gradient(top,#3574d2,#e957c0);
-  background-image: -o-linear-gradient(top,#3574d2,#e957c0);
-  background-image: linear-gradient(to bottom,#3574d2,#e957c0)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3574d2), to(#e957c0));
+  background-image: -webkit-linear-gradient(top, #3574d2, #e957c0);
+  background-image: -o-linear-gradient(top, #3574d2, #e957c0);
+  background-image: linear-gradient(to bottom, #3574d2, #e957c0);
 }
 
 .fact__theme_svg.fact__theme_dawn_clear:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/wT0ZdrEDO2j3UD8W_R8eEwcpDcg.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/wT0ZdrEDO2j3UD8W_R8eEwcpDcg.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_clear .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_clear .fact__hourly_nav:hover {
-  background: #b286e6
+.fact_new_fact.fact_svg.fact_theme_dawn_clear .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_clear .fact__hourly_nav:hover {
+  background: #b286e6;
 }
 
 .fact__theme_svg.fact__theme_dawn_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#3574d2),to(#e957c0));
-  background-image: -webkit-linear-gradient(top,#3574d2,#e957c0);
-  background-image: -o-linear-gradient(top,#3574d2,#e957c0);
-  background-image: linear-gradient(to bottom,#3574d2,#e957c0)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3574d2), to(#e957c0));
+  background-image: -webkit-linear-gradient(top, #3574d2, #e957c0);
+  background-image: -o-linear-gradient(top, #3574d2, #e957c0);
+  background-image: linear-gradient(to bottom, #3574d2, #e957c0);
 }
 
 .fact__theme_svg.fact__theme_dawn_partly:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/wT0ZdrEDO2j3UD8W_R8eEwcpDcg.svg),url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/wT0ZdrEDO2j3UD8W_R8eEwcpDcg.svg),
+    url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_partly .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_partly .fact__hourly_nav:hover {
-  background: #b38be2
+.fact_new_fact.fact_svg.fact_theme_dawn_partly .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_partly .fact__hourly_nav:hover {
+  background: #b38be2;
 }
 
 .fact__theme_svg.fact__theme_dawn_cloudy {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#3574d2),to(#9e4bdf));
-  background-image: -webkit-linear-gradient(top,#3574d2,#9e4bdf);
-  background-image: -o-linear-gradient(top,#3574d2,#9e4bdf);
-  background-image: linear-gradient(to bottom,#3574d2,#9e4bdf)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3574d2), to(#9e4bdf));
+  background-image: -webkit-linear-gradient(top, #3574d2, #9e4bdf);
+  background-image: -o-linear-gradient(top, #3574d2, #9e4bdf);
+  background-image: linear-gradient(to bottom, #3574d2, #9e4bdf);
 }
 
 .fact__theme_svg.fact__theme_dawn_cloudy:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/GXSmVvkzoNMOHftIKrGdbP8aHKo.svg),url(//yastatic.net/s3/weather_frontend/_/t38L8h2hd5Q9fHqYOa6vu8sfezc.svg),url(//yastatic.net/s3/weather_frontend/_/nyVvaSoVOyVsJQHyVIbsLtAhXFg.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/GXSmVvkzoNMOHftIKrGdbP8aHKo.svg),
+    url(//yastatic.net/s3/weather_frontend/_/t38L8h2hd5Q9fHqYOa6vu8sfezc.svg),
+    url(//yastatic.net/s3/weather_frontend/_/nyVvaSoVOyVsJQHyVIbsLtAhXFg.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_cloudy .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_cloudy .fact__hourly_nav:hover {
-  background: #8792ec
+.fact_new_fact.fact_svg.fact_theme_dawn_cloudy .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_cloudy .fact__hourly_nav:hover {
+  background: #8792ec;
 }
 
 .fact__theme_svg.fact__theme_dawn_rain {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#2d7aee),to(#3f95fb));
-  background-image: -webkit-linear-gradient(top,#2d7aee,#3f95fb);
-  background-image: -o-linear-gradient(top,#2d7aee,#3f95fb);
-  background-image: linear-gradient(to bottom,#2d7aee,#3f95fb)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d7aee), to(#3f95fb));
+  background-image: -webkit-linear-gradient(top, #2d7aee, #3f95fb);
+  background-image: -o-linear-gradient(top, #2d7aee, #3f95fb);
+  background-image: linear-gradient(to bottom, #2d7aee, #3f95fb);
 }
 
 .fact__theme_svg.fact__theme_dawn_rain:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_rain .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_rain .fact__hourly_nav:hover {
-  background: #66b4fc
+.fact_new_fact.fact_svg.fact_theme_dawn_rain .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_rain .fact__hourly_nav:hover {
+  background: #66b4fc;
 }
 
 .fact__theme_svg.fact__theme_dawn_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#4478ff),to(#7694ff));
-  background-image: -webkit-linear-gradient(top,#4478ff,#7694ff);
-  background-image: -o-linear-gradient(top,#4478ff,#7694ff);
-  background-image: linear-gradient(to bottom,#4478ff,#7694ff)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4478ff), to(#7694ff));
+  background-image: -webkit-linear-gradient(top, #4478ff, #7694ff);
+  background-image: -o-linear-gradient(top, #4478ff, #7694ff);
+  background-image: linear-gradient(to bottom, #4478ff, #7694ff);
 }
 
 .fact__theme_svg.fact__theme_dawn_snow:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_snow .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_snow .fact__hourly_nav:hover {
-  background: #66b4fc
+.fact_new_fact.fact_svg.fact_theme_dawn_snow .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_snow .fact__hourly_nav:hover {
+  background: #66b4fc;
 }
 
 .fact__theme_svg.fact__theme_dawn_sleet {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#3e7cf5),to(#6e94fe));
-  background-image: -webkit-linear-gradient(top,#3e7cf5,#6e94fe);
-  background-image: -o-linear-gradient(top,#3e7cf5,#6e94fe);
-  background-image: linear-gradient(to bottom,#3e7cf5,#6e94fe)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e7cf5), to(#6e94fe));
+  background-image: -webkit-linear-gradient(top, #3e7cf5, #6e94fe);
+  background-image: -o-linear-gradient(top, #3e7cf5, #6e94fe);
+  background-image: linear-gradient(to bottom, #3e7cf5, #6e94fe);
 }
 
 .fact__theme_svg.fact__theme_dawn_sleet:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/UUw_bOmBTIHZwERyxs_OdegB1cI.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_dawn_sleet .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_dawn_sleet .fact__hourly_nav:hover {
-  background: #66b4fc
+.fact_new_fact.fact_svg.fact_theme_dawn_sleet .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_dawn_sleet .fact__hourly_nav:hover {
+  background: #66b4fc;
 }
 
 .fact__theme_svg.fact__theme_night_clear {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#131546),to(#43258b));
-  background-image: -webkit-linear-gradient(top,#131546,#43258b);
-  background-image: -o-linear-gradient(top,#131546,#43258b);
-  background-image: linear-gradient(to bottom,#131546,#43258b)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#131546), to(#43258b));
+  background-image: -webkit-linear-gradient(top, #131546, #43258b);
+  background-image: -o-linear-gradient(top, #131546, #43258b);
+  background-image: linear-gradient(to bottom, #131546, #43258b);
 }
 
 .fact__theme_svg.fact__theme_night_clear:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),
+    url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),
+    url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_clear .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_clear .fact__hourly_nav:hover {
-  background: #694db3
+.fact_new_fact.fact_svg.fact_theme_night_clear .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_clear .fact__hourly_nav:hover {
+  background: #694db3;
 }
 
 .fact__theme_svg.fact__theme_night_partly {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#131546),to(#3c2081));
-  background-image: -webkit-linear-gradient(top,#131546,#3c2081);
-  background-image: -o-linear-gradient(top,#131546,#3c2081);
-  background-image: linear-gradient(to bottom,#131546,#3c2081)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#131546), to(#3c2081));
+  background-image: -webkit-linear-gradient(top, #131546, #3c2081);
+  background-image: -o-linear-gradient(top, #131546, #3c2081);
+  background-image: linear-gradient(to bottom, #131546, #3c2081);
 }
 
 .fact__theme_svg.fact__theme_night_partly:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),url(//yastatic.net/s3/weather_frontend/_/YgwZWmP30Ogtzs815bCBwIX2oE0.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/JJgQhi2vmz8FoVs8Qf_9Fx7IKnY.svg),
+    url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),
+    url(//yastatic.net/s3/weather_frontend/_/YgwZWmP30Ogtzs815bCBwIX2oE0.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_partly .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_partly .fact__hourly_nav:hover {
-  background: #43258a
+.fact_new_fact.fact_svg.fact_theme_night_partly .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_partly .fact__hourly_nav:hover {
+  background: #43258a;
 }
 
 .fact__theme_svg.fact__theme_night_cloudy {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#142c82),to(#172458));
-  background-image: -webkit-linear-gradient(top,#142c82,#172458);
-  background-image: -o-linear-gradient(top,#142c82,#172458);
-  background-image: linear-gradient(to bottom,#142c82,#172458)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#142c82), to(#172458));
+  background-image: -webkit-linear-gradient(top, #142c82, #172458);
+  background-image: -o-linear-gradient(top, #142c82, #172458);
+  background-image: linear-gradient(to bottom, #142c82, #172458);
 }
 
 .fact__theme_svg.fact__theme_night_cloudy:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/34HBURICBgRJTGWuGZKLmXkY__Q.svg),url(//yastatic.net/s3/weather_frontend/_/57UC5k09TWWng60EGZlQdQS2Gm0.svg),url(//yastatic.net/s3/weather_frontend/_/YgwZWmP30Ogtzs815bCBwIX2oE0.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/34HBURICBgRJTGWuGZKLmXkY__Q.svg),
+    url(//yastatic.net/s3/weather_frontend/_/57UC5k09TWWng60EGZlQdQS2Gm0.svg),
+    url(//yastatic.net/s3/weather_frontend/_/YgwZWmP30Ogtzs815bCBwIX2oE0.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_cloudy .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_cloudy .fact__hourly_nav:hover {
-  background: #3a509d
+.fact_new_fact.fact_svg.fact_theme_night_cloudy .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_cloudy .fact__hourly_nav:hover {
+  background: #3a509d;
 }
 
 .fact__theme_svg.fact__theme_night_rain {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#143982),to(#172458));
-  background-image: -webkit-linear-gradient(top,#143982,#172458);
-  background-image: -o-linear-gradient(top,#143982,#172458);
-  background-image: linear-gradient(to bottom,#143982,#172458)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#143982), to(#172458));
+  background-image: -webkit-linear-gradient(top, #143982, #172458);
+  background-image: -o-linear-gradient(top, #143982, #172458);
+  background-image: linear-gradient(to bottom, #143982, #172458);
 }
 
 .fact__theme_svg.fact__theme_night_rain:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_rain .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_rain .fact__hourly_nav:hover {
-  background: #30539a
+.fact_new_fact.fact_svg.fact_theme_night_rain .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_rain .fact__hourly_nav:hover {
+  background: #30539a;
 }
 
 .fact__theme_svg.fact__theme_night_snow {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#241c86),to(#172458));
-  background-image: -webkit-linear-gradient(top,#241c86,#172458);
-  background-image: -o-linear-gradient(top,#241c86,#172458);
-  background-image: linear-gradient(to bottom,#241c86,#172458)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#241c86), to(#172458));
+  background-image: -webkit-linear-gradient(top, #241c86, #172458);
+  background-image: -o-linear-gradient(top, #241c86, #172458);
+  background-image: linear-gradient(to bottom, #241c86, #172458);
 }
 
 .fact__theme_svg.fact__theme_night_snow:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_snow .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_snow .fact__hourly_nav:hover {
-  background: #4d45b3
+.fact_new_fact.fact_svg.fact_theme_night_snow .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_snow .fact__hourly_nav:hover {
+  background: #4d45b3;
 }
 
 .fact__theme_svg.fact__theme_night_sleet {
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#142c82),to(#172458));
-  background-image: -webkit-linear-gradient(top,#142c82,#172458);
-  background-image: -o-linear-gradient(top,#142c82,#172458);
-  background-image: linear-gradient(to bottom,#142c82,#172458)
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#142c82), to(#172458));
+  background-image: -webkit-linear-gradient(top, #142c82, #172458);
+  background-image: -o-linear-gradient(top, #142c82, #172458);
+  background-image: linear-gradient(to bottom, #142c82, #172458);
 }
 
 .fact__theme_svg.fact__theme_night_sleet:before {
-  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg),url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg)
+  background-image: url(//yastatic.net/s3/weather_frontend/_/kpceZ6O9tyGTKYmc5zVdCysXBgo.svg),
+    url(//yastatic.net/s3/weather_frontend/_/ISUhzXBZPn_5s1f3ZeGaHrqCXfs.svg),
+    url(//yastatic.net/s3/weather_frontend/_/bIaQRraxQedLQTfiIaVbabc46DQ.svg);
 }
 
-.fact_new_fact.fact_svg.fact_theme_night_sleet .fact__hourly_nav,.fact_new_fact.fact_svg.fact_theme_night_sleet .fact__hourly_nav:hover {
-  background: #2d459c
+.fact_new_fact.fact_svg.fact_theme_night_sleet .fact__hourly_nav,
+.fact_new_fact.fact_svg.fact_theme_night_sleet .fact__hourly_nav:hover {
+  background: #2d459c;
 }
 
-.fact__theme_svg.fact__theme_dawn_clear,.fact__theme_svg.fact__theme_dawn_partly {
-  background-image: -webkit-radial-gradient(100% 100% at 18% 100%,#e957c0 0,#3574d2 100%);
-  background-image: -o-radial-gradient(100% 100% at 18% 100%,#e957c0 0,#3574d2 100%);
-  background-image: radial-gradient(100% 100% at 18% 100%,#e957c0 0,#3574d2 100%)
+.fact__theme_svg.fact__theme_dawn_clear,
+.fact__theme_svg.fact__theme_dawn_partly {
+  background-image: -webkit-radial-gradient(100% 100% at 18% 100%, #e957c0 0, #3574d2 100%);
+  background-image: -o-radial-gradient(100% 100% at 18% 100%, #e957c0 0, #3574d2 100%);
+  background-image: radial-gradient(100% 100% at 18% 100%, #e957c0 0, #3574d2 100%);
 }
 
 .fact__theme_svg.fact__theme_dawn_cloudy {
-  background-image: -webkit-radial-gradient(100% 100% at 18% 100%,#9e4bdf 0,#3574d2 100%);
-  background-image: -o-radial-gradient(100% 100% at 18% 100%,#9e4bdf 0,#3574d2 100%);
-  background-image: radial-gradient(100% 100% at 18% 100%,#9e4bdf 0,#3574d2 100%)
+  background-image: -webkit-radial-gradient(100% 100% at 18% 100%, #9e4bdf 0, #3574d2 100%);
+  background-image: -o-radial-gradient(100% 100% at 18% 100%, #9e4bdf 0, #3574d2 100%);
+  background-image: radial-gradient(100% 100% at 18% 100%, #9e4bdf 0, #3574d2 100%);
 }
 
 .fact__theme_svg.fact__theme_night_clear:before {
   /*background-position-x: 0,0,-40px;*/
   /*background-position-y: 0,0,-65px;*/
-  -webkit-background-size: auto 100%,auto 100%,auto 125%;
-  background-size: auto 100%,auto 100%,auto 125%
+  -webkit-background-size: auto 100%, auto 100%, auto 125%;
+  background-size: auto 100%, auto 100%, auto 125%;
 }

@@ -25,17 +25,19 @@ const Home: FC<Props> = ({ initial, width, height }) => {
   const isShowForecast =
     forecast && (query.forecast ? query.forecast === '1' : (height ?? windowSize.height) > 224);
   const fontSize =
-    Math.min(
+    (Math.min(
       (width ?? windowSize.width) / 7,
       (height ?? windowSize.height) / (isShowForecast ? 5 : 3)
-    ) / 3;
+    ) /
+      3) *
+    (Number(query.zoom) ?? 1);
   return (
     <div>
       <Head>
         <title>Погода</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={clsx(styles.container, bkg, 'size')}>
+      <div className={clsx(styles.container, 'size')}>
         <div className={clsx(bs.fact__theme, bkg)} />
         <div className={clsx(styles.content)}>
           <Header />
