@@ -38,7 +38,7 @@ const Header: FC = () => {
       <div className={styles.info}>
         {query.city && <div className={styles.city}>{query.city}</div>}
         <div className={clsx({ secondary: !!query.city }, 'flex')}>
-          {day}, {now.getDate()} {MONTHS[now.getMonth() - 1]},&nbsp; <Clock />
+          {day}, {now.getDate()} {MONTHS[now.getMonth()]},&nbsp; <Clock />
         </div>
       </div>
       {!query.noban && (
