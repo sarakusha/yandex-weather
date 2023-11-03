@@ -59,7 +59,7 @@ const Home: FC<Props> = ({ initial, width, height }) => {
         {`
           .size {
             ${width ? `width: ${width}px;` : ''}
-            ${height ? `height: ${height}px` : 'min-height: 100vh'}
+            ${height ? `height: ${height}px;` : 'min-height: 100vh;'}
             overflow: hidden;
           }
         `}
